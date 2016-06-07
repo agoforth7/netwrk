@@ -1,0 +1,607 @@
+@font-face {
+  font-family: 'Domine';
+  src: url('assets/fonts/domine/Domine-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('assets/fonts/montserrat/Montserrat-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Montserrat-Light';
+	src: url('assets/fonts/montserrat/Montserrat-Light.ttf');
+}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+body {
+	font-family: 'Montserrat';
+	font-size: 15px;
+	text-align: center;
+	margin: 0;
+	background-color: #fcfcfc;
+}
+
+header {
+	background-color: #000;
+}
+
+nav {
+	margin: 0 auto;
+	color: #fff;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+nav li img {
+	position: relative;
+	top: .75em;
+	width: 2.25em;
+}
+
+nav li {
+	line-height: 3.5em;
+}
+
+nav li a {
+	font-family: 'Montserrat-Light';
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 12px;
+	padding: 1.25em 0;
+}
+
+h1, h2, h3, h4, h5 {
+	text-transform: uppercase;
+	letter-spacing: .05em;
+}
+
+h2 {
+	font-size: 1.25em;
+}
+
+p {
+	font-family: 'Domine';
+	font-size: .8em;
+	color: #666;
+	line-height: 1.75em;
+}
+
+.hero {
+	background-color: #1cafc2;
+	background-image: linear-gradient(180deg, #1cafc2, #66e0ee);
+	background-repeat: no-repeat;
+	padding: 5.5em 2em;
+}
+
+.hero > h1 {
+	font-size: 2em;
+}
+
+.hero > h2 {
+	font-weight: lighter;
+	color: #fff;
+}
+
+.intro {
+	width: 80%;
+	padding: 1.5em 0;
+	margin: 0 auto;
+}
+
+.what-we-do,
+footer {
+	background-color: #eee;
+	background-image: url(assets/images/bg.png);
+	background-repeat: repeat;
+	background-size: 300px;
+}
+
+.what-we-do {
+	padding: 2.5em;
+}
+
+.what-we-do > h2 {
+	margin: 0;
+}
+
+.main-title:before,
+.main-title:after {
+	content: '\00a0 \00b7 \00a0';
+	display: none;
+}
+
+.what-item {
+	width: 85%;
+	padding: 1.5em 0;
+	margin: 0 auto;
+}
+
+.what-item > h3 {
+	font-size: 1em;
+}
+
+.biglogo {
+	display: none;
+}
+
+.biglogo img {
+	width: 80%;
+	padding-top: 1em;
+}
+
+.shout-box {
+	width: 80%;
+	padding: 2.75em 2.75em 3.25em 2.75em;
+	border-top: 1.5px solid #eee;
+	margin: 0 auto;
+}
+
+.shout-box > h2 {
+	padding-bottom: 2em;
+	margin: 0;
+}
+
+button {
+	display: inline-block;
+	border: none;
+	background-color: #1cafc2;
+	padding: 1em;
+}
+
+button a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'Montserrat-Light';
+	font-size: .8em;
+	color: #eee;
+}
+
+button:hover {
+	background-color: #66e0ee;
+	color: #666;
+}
+
+footer nav li a {
+	color: #666;
+}
+
+/*About page*/
+
+.sub-hero {
+	background-color: #1cafc2;
+	background-image: linear-gradient(180deg, #1cafc2, #66e0ee);
+	background-repeat: no-repeat;
+	padding: 3em 2.5em;
+}
+
+.sub-hero > h1 {
+	font-size: 1.55em;
+	margin: .5em;
+}
+
+.sub-hero > h2 {
+	font-size: 1em;
+	font-weight: lighter;
+	color: #fff;
+}
+
+.open-source {
+	width: 80%;
+	padding: 1.5em 0 2.5em 0;
+	margin: 0 auto;
+}
+
+.open-source > img {
+	width: 3.5em;
+}
+
+span {
+	font-family: monospace;
+}
+
+.recent-projects {
+	padding: 1.5em 0 2.25em 0;
+	border-top: 1.5px solid #eee;
+}
+
+.project {
+	width: 84%;
+	margin: 0 auto;
+	text-align: left;
+	padding: 1.75em;
+}
+
+#jquery {
+	width: 5em;
+}
+
+#ember {
+	width: 4em;
+}
+
+#rails {
+	width: 1.6em;
+}
+
+#rust {
+	width: 2em;
+}
+
+#bundler {
+	width: 4.5em;
+}
+
+#handlebars {
+	width: 5.5em;
+}
+
+#thor {
+	width: 4em;
+}
+
+#rubinius {
+	width: 5.75em;
+}
+
+.project h4 {
+	margin-top: 0;
+}
+
+/*Consulting page*/
+
+.container {
+	padding-top: 1.5em;
+}
+
+.specialty-box,
+.curricula {
+	width: 80%;
+	margin: 0 auto;
+	text-align: left;
+	padding: 1em 0;
+	border-bottom: 1.5px solid #eee;
+	overflow: hidden;
+}
+
+.specialty-box img {
+	display: block;
+	width: 6em;
+	margin: 0 auto;
+}
+
+.sub-shout {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.sub-shout > h2 {
+	padding-bottom: 0;
+	margin: 0;
+}
+
+.sub-shout > p {
+	margin-bottom: 3em;
+}
+
+/*Training page*/
+
+.status-box {
+	display: inline-block;
+	padding: 1em;
+	font-size: .5em;
+	color: #fff;
+	text-shadow: -1px 1px 1px #666;
+}
+
+.new {
+	background-color: #5dd7ac;
+}
+
+.online {
+	background-color: #000;
+}
+
+.delayed {
+	background-color: #d55b4e;
+}
+
+.curricula a,
+aside a {
+	color: #888;
+}
+
+.last {
+	border: none;
+	padding-bottom: 2em;
+}
+
+.sign-up {
+	background-color: #eee;
+	background-image: url(assets/images/bg.png);
+	background-repeat: repeat;
+	background-size: 300px;
+	padding: 1.5em;
+}
+
+.sign-up > form {
+	width: 17em;
+	margin: 0 auto;
+}
+
+input {
+	height: 2.75em;
+	border: none;
+	padding: 0 .5em;
+}
+
+.sign-up input {
+	width: 70%;
+	font-size: .8em;
+	text-align: left;
+	margin-left: .25em;
+	float: left;
+}
+
+.sign-up button {
+	width: 25%;
+	margin-left: .25em;
+	padding: .5em;
+	float: left;
+}
+
+/*Contact page*/
+
+aside {
+	width: 80%;
+	padding: 1.5em 0 2.5em 0;
+	margin: 0 auto;
+	border-bottom: 1.5px solid #eee;
+}
+
+aside img {
+	width: 55%;
+}
+
+aside h5 {
+	margin-bottom: 0;
+}
+
+.help-box {
+	width: 66%;
+	margin: 0 auto;
+	padding: 1em 0 5em 0;
+	text-align: left;
+}
+
+label {
+	display: block;
+	font-family: 'Montserrat';
+	font-size: .7em;
+	text-transform: uppercase;
+	color: #666;
+	text-align: left;
+	padding-bottom: .75em;
+}
+
+.help-box input {
+	width: 100%;
+	margin-bottom: 1.5em;
+}
+
+textarea {
+	width: 100%;
+	height: 11em;
+	border: none;
+	margin-bottom: 1.5em;
+}
+
+.help-box button {
+	padding: .5em;
+}
+
+@media (min-width: 500px) {
+	body {
+		font-size: 17px;
+	}
+
+	nav {
+		width: 100%;
+	}
+
+	nav li img {
+		display: inline-block;
+		margin: auto;
+	}
+
+	nav li {
+		display: inline-block;
+	}
+
+	nav li a {
+		font-size: 14px;
+		padding: .75em 1em;
+	}
+
+	.hero > h1 {
+		font-size: 2.5em;
+		margin-bottom: 0;
+	}
+
+	.hero > h2 {
+		font-size: 1.5em;
+	}
+
+	.main-title:before,
+	.main-title:after {
+		display: inline-block;
+	}
+
+	.what-item {
+		width: 50%;
+		padding: 1.5em 2em;
+		float: left;
+	}
+
+	.what-item > h3 {
+		font-size: 1em;
+	}
+
+	.biglogo {
+		display: inline-block;
+	}
+
+	/*About page*/
+
+	.open-source {
+		padding-bottom: 1.5em;
+	}
+
+	.open-source > img {
+		width: 5em;
+	}
+
+	.recent-projects {
+		padding: 1.5em 2.25em 1em 2.25em;
+	}
+
+	.project {
+		width: 50%;
+		padding: 1.75em;
+		float: left;
+	}
+
+	.project:nth-of-type(2n + 1) {
+		clear: left;
+	}
+	
+	.specialty-box img {
+		width: 8.5em;
+		margin: 0 0 .25em 2em;
+		float: right;
+	}
+
+	.specialty-box:nth-child(3) img {
+		margin: 0 1.5em .25em 0;
+		float: left;
+	}
+
+	/*Contact page*/
+
+	.main-contact {
+		width: 75%;
+		padding: 1.75em 0 2.5em 0;
+		margin: 0 auto;
+	}
+
+	.help-box {
+		width: 66%;
+		text-align: left;
+		padding: 0 2em 0 2em;
+		border-right: 1.5px solid #eee;
+		float: left;
+	}
+
+	.help-box h4 {
+		margin-top: 0;
+	}
+
+	aside {
+		width: 33%;
+		padding: 0 0 0 2em;
+		border-bottom: none;
+		float: right;
+	}
+
+	aside img {
+		width: 100%;
+	}
+}
+
+@media (min-width: 800px) {
+	.hero {
+		padding: 2.5em 2em;
+	}
+
+	.hero > h1 {
+		font-size: 4em;
+		margin-bottom: 0;
+	}
+
+	.hero > h2 {
+		font-size: 2.5em;
+	}
+
+	.what-we-do {
+		padding: 1.5em 0 3em 0;
+	}
+
+	.what-we-do h3 {
+		line-height: 1.5em;
+	}
+
+	.what-container {
+		width: 85%;
+		margin: 0 auto;
+	}
+
+	.what-item {
+		width: 33%;
+		padding: .5em 1.75em;
+		float: left;
+	}
+
+	.biglogo {
+		display: none;
+	}
+
+	/*About page*/
+
+	.sub-hero {
+		padding: 3.25em 2.5em;
+	}
+
+	.open-source > img {
+		width: 9.5em;
+	}
+
+	.project {
+		width: 33%;
+		padding: 1.5em 1.75em;
+		float: left;
+	}
+
+	.project:nth-of-type(2n + 1) {
+		clear: none;
+	}
+
+	.project:nth-of-type(3n + 1) {
+		clear: left;
+	}
+
+	/*Consulting page*/
+
+	.specialty-box img {
+		width: 11em;
+	}
+
+	/*Contact page*/
+
+	aside img {
+		width: 65%;
+	}
+}
